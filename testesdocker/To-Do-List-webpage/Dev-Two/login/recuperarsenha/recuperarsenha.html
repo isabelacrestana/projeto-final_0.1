@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Recuperação de Senha</h1> 
+    <h2>Insira seus dados:</h2>
+    <form action="/login/recuperarsenha/enviaremail/enviaremail.php" method="POST">
+
+        <input type="email" name="Email" placeholder="Email" required autofocus> <br>
+
+        <input type="text" name="CPF" placeholder="CPF" 
+               pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite um CPF válido no formato 123.456.789-10"
+               maxlength="15" required> <br>
+
+        <input type="date" name="Data" min="1907-03-04" max="2023-06-16" required> <br>
+
+        <input type="submit" name="Enviar" value="Enviar">
+
+        <!-- OBS: Adicionar JS para não permitir a digitação de letras -->
+
+    </form>   
+    
+</body>
+</html>
